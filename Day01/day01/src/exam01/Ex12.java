@@ -1,10 +1,9 @@
 package exam01;
 
-public class Ex09 {
+public class Ex12 {
     public static void main(String[] args) {
-        byte num1=100;
-        int num2=num1;
-
+        int num1=1000;
+        byte num2 = (byte)num1;
         System.out.println(num2);
     }
 }
