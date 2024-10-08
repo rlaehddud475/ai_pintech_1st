@@ -7,5 +7,8 @@ public class Ex04 {
         int num2=++num1; // 증감연선(++)->대입(=)
         System.out.println(num2);
         System.out.println(num1);
+        double num3=10.5;
+        num3++;
+        System.out.println(num3);
     }
 }
