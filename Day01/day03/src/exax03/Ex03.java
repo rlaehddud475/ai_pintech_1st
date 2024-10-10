@@ -1,6 +1,6 @@
 package exax03;
 
-public class Ex01 {
+public class Ex03 {
     public static void main(String[] args) {
         Student st = new Student();
         st.id=20241112;
