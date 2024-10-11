@@ -14,7 +14,13 @@ public class Student {
         id=1000;
         name="이이름";
         major="영어";
-    }//defalut 생성자, 따로 정의 안해도 컴파일러가 추가함
+    }
+    public Student(int _id, String _name, String _major){
+        id=_id;
+        name=_name;
+        major=_major;
+    }
+    //defalut 생성자, 따로 정의 안해도 컴파일러가 추가함
     public void showInfo(){
         System.out.printf("id=%d, name=%s, major=%s%n",id,name,major);
     }
