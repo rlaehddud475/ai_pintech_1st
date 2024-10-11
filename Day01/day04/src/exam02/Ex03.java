@@ -6,5 +6,7 @@ public class Ex03 {
         Student s2 = new Student(1002,"박이름","수학");
         s1.showInfo();
         s2.showInfo();
+        Class cls=Student.class;
+        System.out.println(cls);
     }
 }
