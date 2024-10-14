@@ -1,4 +1,10 @@
 package exam04;
 
-public class C {
+import exam03.A;
+
+public class C extends A {
+public void methodC(){
+    num4=200;
+    System.out.println(num4);
+}
 }
