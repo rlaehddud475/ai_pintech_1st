@@ -9,6 +9,14 @@ private int day;
         this.year = year;
         this.day = day;
     }
+    public Schedule2(){
+    this(2024,10,14);
+        //        year=2024;
+//        month=10;
+//        day=14;
+    }
+
+
 
     public int getDay() {
         return day;
