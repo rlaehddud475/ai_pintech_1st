@@ -12,6 +12,8 @@ public class Ex04 {
 
         }catch (ArithmeticException e){
             System.out.println(e.getMessage());
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }
