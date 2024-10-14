@@ -4,7 +4,10 @@ public class LoginService {
     private LoginService(){}
     private static LoginService instance;
     public static LoginService getInstance(){
-        return instance;
+      if(instance==null){
+          instance=new LoginService();
+      }
+      return instance;
     }
     public  void login(String userId,String password){
 
