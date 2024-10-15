@@ -9,8 +9,16 @@ public class Ex02 {
         animals[1]=new Bird();
         animals[2]=new Human();*/
         Animal[] animals={new Tiger(),new Bird(), new Human()};
-        for (Animal animal:animals){
+        for (Animal animal:animals){//업캐스팅
             animal.move();
+            if (animal instanceof Human){
+                Human human=(Human) animal;//다운 캐스팅
+                human.reading();
+            }else if (animal instanceof Bird bird){
+                bird.singing();
+            }else if (animal instanceof Tiger tiger){
+                tiger.hunting();
+            }
         }
     }
 }
