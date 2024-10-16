@@ -8,7 +8,7 @@ public class Outer {
         public int add(int num1, int num2) {
             return num1+num2;
         }
-    }
+    };
     //익명 내부 클래스
 //    Calculator method(int num3){
 //        return new Calculator() {
@@ -28,4 +28,4 @@ public class Outer {
     /*    int result = cal.add(10,20);
         System.out.println(result);*/
     }
-}
+
