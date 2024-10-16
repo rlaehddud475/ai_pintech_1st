@@ -8,7 +8,7 @@ public class D implements C{
 
     @Override
     public void common() {
-
+        System.out.println("Common 호출!");
     }
 
     @Override
