@@ -5,8 +5,9 @@ public class Ex04 {
         A a = new A(){
             @Override
             public void methodA() {
-                super.methodA();
+                System.out.println("재정의된 메서드A");
             }
         };
+        a.methodA();
     }
 }
