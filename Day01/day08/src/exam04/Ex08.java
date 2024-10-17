@@ -7,9 +7,15 @@ public class Ex08 {
 sum(10,20,30);
         sum(10,20,30,40);
         sum(10,20);
+
+        int[] nums={10,20,30,40,50};
+        sum(nums);
     }
     public static int sum(int... nums){
-        System.out.println(Arrays.toString(nums));
+        int total=0;
+        for (int num:nums){
+            return total+num;
+        }
         return 0;
     }
 }
