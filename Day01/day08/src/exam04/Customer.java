@@ -1,5 +1,7 @@
 package exam04;
 
+import java.util.Objects;
+
 public class Customer extends java.lang.Object {
     private int id;
     private String name;
@@ -18,6 +20,26 @@ public class Customer extends java.lang.Object {
                 ", id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Customer customer) {
+
+            if(id==customer.id && name.equals(customer.name)&&email.equals(customer.email) ){
+                return true;
+            }
+        }
+
+        return false;
+
+
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, email);
     }
 
     public String getEmail() {
@@ -43,4 +65,5 @@ public class Customer extends java.lang.Object {
     public void setName(String name) {
         this.name = name;
     }
+
 }
