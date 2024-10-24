@@ -1,4 +1,5 @@
 package exam04;
 
-public class Fruit {
+public abstract class Fruit implements Eatable {
+    public abstract String info();
 }
