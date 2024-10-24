@@ -3,9 +3,8 @@ package exam01;
 public class Ex01 {
     public static void main(String[] args) {
 
-        int result = add2((num1, num2)-> {
-                return num1+num2;
-        },10,20);
+        int result = add2((a, b)->
+        a*b,10,20);
          /*
            @Override
            public int add(int num1, int num2) {
