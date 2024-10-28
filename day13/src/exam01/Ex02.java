@@ -9,5 +9,7 @@ public class Ex02 {
         IntPredicate cond3=cond1.and(cond2);
         System.out.println(cond3.test(150));
         System.out.println(cond3.test(50));
+        IntPredicate cond4=cond3.negate();
+        System.out.println(cond4.test(150));
     }
 }
