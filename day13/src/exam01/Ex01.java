@@ -13,7 +13,7 @@ public class Ex01 {
         // 문자열->정수 길이->제곱
         Function<String,Integer> func3=func1.andThen(func2); // func1->func2
 
-        int result = func3.apply("ABC");
+        int result = func3.apply("ABC"); //3->9
         System.out.println(result);
     }
 }
