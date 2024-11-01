@@ -2,21 +2,19 @@ package exam02;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
-public class Ex02 {
+public class Ex01 {
     public static void main(String[] args) {
         Map<String, String> members=new HashMap<>();
         members.put("user01","사용자 01");
         members.put("user02","사용자 02");
         members.put("user03","사용자 03");
         members.put("user04","사용자 04");
+        members.put("user01","사용자 99");
+        System.out.println(members);
+        members.remove("user02");
+        String userName02=members.get("user02");
+        System.out.println(userName02);
 
-        Set<Map.Entry<String,String>> entries = members.entrySet();
-        for (Map.Entry<String, String> entry : entries){
-            String key=entry.getKey();
-            String value=entry.getValue();
-            System.out.printf("key=%s, value=%s%n", key,value);
-        }
     }
 }
