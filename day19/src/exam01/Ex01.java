@@ -11,7 +11,9 @@ public class Ex01 {
         String str=null;
         Optional<String > opt = Optional.ofNullable(str);
 
-        String str2=opt.get();
+     /*   String str2=opt.get();*/
+        String str2=opt.orElse("ABC");
+        System.out.println(str2);
 
     }
 }
