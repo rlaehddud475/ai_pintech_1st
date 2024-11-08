@@ -14,6 +14,8 @@ ch=fis.read();
     System.out.println((char)ch);
     ch=fis.read();
     System.out.println((char)ch);
+    ch=fis.read();
+    System.out.println((char)ch);
 }catch (IOException e){
     e.printStackTrace();
 }
